@@ -120,7 +120,118 @@ If you want a **modern double-DIN head unit** (CarPlay, Android Auto, etc.), the
 - DAB+ digital radio, hands-free calling, reverse camera input.
 
 ---
+## 📼 Option 4: Bluetooth Cassette Tape Adapter
 
+> **Difficulty:** Trivial · **Sound Quality:** Decent · **Factory Look:** ❌ No (cable visible)
+
+If your NM35/V35/G35 still has the factory **cassette deck** (many JDM models do), this is the second-easiest option after an FM transmitter — and it sounds better.
+
+### How It Works
+
+1. Insert the cassette-shaped adapter into the tape deck.
+2. A thin cable comes out of the cassette and plugs into your phone's headphone jack (or a Bluetooth receiver dongle).
+3. The tape deck's read head picks up the signal magnetically — no radio interference, no hiss.
+
+### Bluetooth Version
+
+You can buy cassette adapters with **built-in Bluetooth** (battery-powered, rechargeable via USB) — no cable to your phone at all. The cassette sits in the deck and pairs wirelessly.
+
+| Type | Link |
+|------|------|
+| Wired 3.5mm cassette adapter | [Amazon](https://www.amazon.com/s?k=cassette+tape+aux+adapter) |
+| Bluetooth cassette adapter (rechargeable) | [Amazon](https://www.amazon.com/s?k=bluetooth+cassette+adapter+rechargeable) |
+
+### Pros
+- Better sound than FM transmitters — no static, no frequency hunting.
+- Zero install — pop it in and go.
+- Cheap — $5–20.
+
+### Cons
+- Cable dangling from the tape deck (wired version).
+- The cassette mechanism whirs — some adapters are louder than others.
+- Tape deck must be functional — if the belt's gone, this won't work.
+- Looks a bit janky.
+
+---
+
+## 💿 Option 5: Burning CDs
+
+> **Difficulty:** Trivial · **Sound Quality:** Excellent · **Factory Look:** ✅ Yes
+
+It's 2026 and this feels ridiculous, but the **CD player still works** and CD audio quality is genuinely good (16-bit / 44.1 kHz uncompressed).
+
+### How It Works
+
+1. Burn your music to a **CD-R** (not CD-RW — old Clarion units are picky).
+2. Burn as **Audio CD** format (not MP3/data — the factory Clarion won't read MP3 CDs).
+3. That's ~80 minutes / ~15–20 tracks per disc.
+4. Keep a stack in the glovebox.
+
+### Pros
+- **Best possible sound quality** through the factory system — no compression, no interference.
+- Zero install, zero wiring.
+- Steering wheel controls work perfectly.
+- Dirt cheap — blank CD-Rs cost pennies.
+
+### Cons
+- 80 minutes per disc. You'll be swapping constantly.
+- No streaming, no playlists, no Bluetooth calls.
+- Burning CDs in 2026 feels like using a fax machine.
+- CD-RW discs usually don't work — one-time burns only.
+
+> Honestly? Burning a few CDs as a stopgap while you figure out a permanent solution is totally valid. Don't let anyone shame you.
+
+---
+
+## 🔧 Option 6: Boot / Trunk Install (Amp or Bluetooth in Rear Cargo Area)
+
+> **Difficulty:** Medium–Hard · **Sound Quality:** Excellent · **Factory Look:** ✅ Yes (hidden)
+
+Instead of touching the dash, you can install an amplifier or Bluetooth receiver in the **rear cargo area (boot)**, tapping into existing wiring back there. There are plenty of YouTube videos and forum guides on amp installs in G35/V35 boots — the NM35 wagon has even more room to work with.
+
+### General Approach
+
+1. Mount a small amp or Bluetooth receiver board in the **left or right rear cargo trim pocket**.
+2. Tap **12V constant** from the rear fuse box or battery (the NM35 battery is in the boot!).
+3. Tap **ACC (ignition)** from the rear 12V accessory socket if equipped.
+4. Run speaker wires forward, or tap into the factory speaker wiring where it passes through the rear.
+5. Ground to a solid chassis point in the cargo area.
+
+Search YouTube for: *"G35 amp install trunk"*, *"V35 amplifier boot install"*, *"Nissan Stagea audio install"*.
+
+### NM35-Specific: Navigation AV / TV Tuner Route
+
+Japanese-market NM35 Stageas often came with navigation and TV equipment mounted in the rear cargo area:
+
+- A **navigation computer** (usually behind trim on the left side of the boot).
+- A **TV tuner module**.
+- **AV wiring** running between the dash screen and the rear modules.
+
+The Clarion PN-2413E head unit in these cars supports AV input from the TV tuner and navigation. This means you might be able to **inject audio through the rear AV/TV tuner input** rather than messing with the CD changer or front harness.
+
+```
+Phone
+  ↓ Bluetooth receiver
+AV input / TV tuner input (in rear cargo area)
+  ↓
+Factory AV wiring
+  ↓
+Factory screen / head unit
+  ↓
+Factory audio system
+```
+
+#### Potential AV Input Sources to Tap
+
+- **TV tuner audio input** — if your car has the TV button on the head unit.
+- **Reverse camera input** — some units have an AV input for the backup camera.
+- **Navigation audio input** — nav voice prompts route through the stereo.
+
+> ⚠️ **Untested — theory only.** This path is less documented than the CD changer route, but it's worth investigating if you have the rear modules. The advantage is you don't need to pull the dash apart. The disadvantage is that JDM nav/TV systems can be deeply integrated and hard to reverse-engineer.
+>
+> If you've tapped the rear AV/TV input on an NM35 — **please open an Issue!**
+
+---
 ## �🔀 Comparison
 
 | Method | Cost | Sound | Install Effort | Factory Look | Steering Wheel Controls |
@@ -129,7 +240,9 @@ If you want a **modern double-DIN head unit** (CarPlay, Android Auto, etc.), the
 | **Yatour / GROM CD Changer** | ~$50–150 | ⭐⭐⭐⭐⭐ | 30–60 min | ✅ Yes | ✅ Yes |
 | **Bluetooth FM Transmitter** | ~$10–25 | ⭐⭐ | 30 sec | ❌ No | ❌ No |
 | **Metra Double DIN Conversion** (untested) | ~$50–400+ | ⭐⭐⭐⭐⭐ | 3–6 hrs | ❌ No (aftermarket) | Depends on HU |
-| **Cassette Tape Adapter** (if equipped) | ~$5–10 | ⭐⭐⭐ | 10 sec | ❌ No | ❌ No |
+| **Bluetooth Cassette Adapter** | ~$5–20 | ⭐⭐⭐ | 10 sec | ❌ No (cable) | ❌ No |
+| **Burning CDs** | ~$5 (spindle of CD-Rs) | ⭐⭐⭐⭐⭐ | 5 min per disc | ✅ Yes | ✅ Yes |
+| **Boot / Trunk Install** | ~$30–200 | ⭐⭐⭐⭐ | 2–4 hrs | ✅ Yes (hidden) | Depends on setup |
 
 ---
 
