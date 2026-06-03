@@ -54,20 +54,25 @@ The Aerpro APP8SP3 (and similar generic harnesses) plugs into the factory Nissan
 
 > ⚠️ **NM35 Stagea anomaly:** On a normal Nissan ISO harness, Orange = Illumination and Black = Ground. On the NM35 Stagea, **Orange = Ground** and Black is something else (unknown). Blue is also unknown. **Always verify with a multimeter.**
 
-### Amp Board Terminal Mapping (9603 / XW-M521)
+### Amp Board Terminal Mapping
 
-The XW-M521 board typically has screw terminals or a JST connector with:
+These boards use various labelling schemes. Here's both — match whichever your board has printed:
 
 ```
-B+   → Yellow (12V Constant)
-GND  → Orange / Orange-White (Ground — yes, really, on NM35)
-ACC  → Red (Ignition / Accessory)
-FL+ FL− → White / White-Black
-FR+ FR− → Gray / Gray-Black
-RL+ RL− → Green / Green-Black
-RR+ RR− → Purple / Purple-Black
+                        ISO Harness Wire
+B+     → Yellow                           (12V Constant)
+GND    → Orange / Orange-White            (Ground — yes, really, on NM35)
+ACC    → Red                              (Ignition / Accessory)
+
+        Board Label (common)       Alt Label          ISO Harness Wire
+        ─────────────────────────────────────────────────────────────────
+        ROUT1+  ROUT1−       ≡    FL+   FL−     →    White / White-Black
+        LOUT1+  LOUT1−       ≡    FR+   FR−     →    Gray / Gray-Black
+        ROUT2+  ROUT2−       ≡    RL+   RL−     →    Green / Green-Black
+        LOUT2+  LOUT2−       ≡    RR+   RR−     →    Purple / Purple-Black
 ```
 
+> ⚠️ **The R/L labelling is inconsistent across boards.** Test with your phone's balance/fader before buttoning up the dash. If left and right are swapped, flip ROUT1 ↔ LOUT1 and ROUT2 ↔ LOUT2.
 > ⚠️ **Double-check your specific board's silkscreen labels.** Some variants label the remote/ACC line as `REM`, `ACC`, or `EN`.
 > ⚠️ **GND on the NM35 is Orange, not Black.** See pinout table above.
 
@@ -106,13 +111,60 @@ The factory radio connectors on the NM35 are a **10-pin** and a **6-pin** plug. 
 
 ## 🛠️ Step-by-Step
 
+### Tools Needed
+- **Philips screwdriver** (medium and stubby — some screws are in tight spots)
+- **Pry tool set** (plastic — don't use a flathead screwdriver on your trim)
+- **Digital multimeter (DMM)** — for verifying wires
+
 ### 1. Disconnect the Battery
 Negative terminal off. Always.
 
 ### 2. Remove Factory Head Unit
-- Pop the centre console trim (pry tools recommended).
-- Unbolt the factory radio (4× Philips screws on NM35).
-- Unplug the factory radio connectors.
+
+The NM35 / V35 / G35 stereo surround is buried under several trim layers. Take your time — broken clips rattle forever.
+
+#### 2a. Shifter Surround
+- Lift up the **centre shifter surround** (it's clipped in — pry gently from the edges).
+- Disconnect any electrical connectors underneath (seat heaters, power mode switch, etc.).
+- Remove the **screws below the stereo** that were hidden by the shifter surround.
+
+#### 2b. Top Trim / Clock Panel
+- Carefully pry out the **top trim piece** above the stereo (G35 has an analog clock here, NM35 has a digital clock/display).
+- Unplug the clock connector.
+- Remove the **screw hidden underneath** this panel.
+
+#### 2c. Glovebox Side
+- Open the glovebox and remove **4–5 screws** around its perimeter.
+- Use a pry tool to release the glovebox assembly — it pulls out as a unit.
+- This exposes the **right-side pocket/side trim screws** beside the stereo.
+
+#### 2d. Driver Side (Under-Steering-Wheel Trim)
+- Use a pry tool + screwdriver to remove the **trim panel under the steering wheel**.
+- Lift/tilt the steering wheel (adjust lever underneath) for clearance as needed.
+- This exposes the **left-side pocket/side trim screws** beside the stereo.
+
+#### 2e. Side Pockets
+- With both sides exposed, pry and unscrew the **pocket/trim pieces on each side** of the stereo from the inside.
+
+#### 2f. Rear Trim Behind Stereo
+- Carefully pry up and remove the **trim piece that sits behind/above the stereo unit** (clips into the dash near the windshield base).
+
+#### 2g. Lift the Stereo Out
+- If everything above is undone correctly, you should be able to **lift the entire stereo/trim assembly out** as one unit.
+- Unplug the factory radio connectors (10-pin + 6-pin).
+
+#### 📺 Video References
+
+Watch these to see the trim removal in action (G35/V35 is nearly identical):
+
+| Video | Link |
+|-------|------|
+| G35 Stereo Removal (detail) | [YouTube](https://www.youtube.com/watch?v=Xe-EnF-_xEA) |
+| G35 Radio Removal | [YouTube](https://www.youtube.com/watch?v=r_6xa7TdavU) |
+| G35 Head Unit Removal | [YouTube](https://www.youtube.com/watch?v=padrWXT_X_k) |
+| V35 Stereo Removal | [YouTube](https://www.youtube.com/watch?v=Bhy5eNper2c) |
+
+> 💡 **Tip:** Tape each screw to a piece of cardboard in the order you removed them and label where it came from. There are a lot of different screw lengths and it's easy to mix them up.
 
 ### 3. Plug in the ISO Harness
 The Aerpro harness clicks straight into the factory Nissan plugs — no cutting.
